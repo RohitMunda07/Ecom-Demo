@@ -15,12 +15,25 @@
 <body>
   <div class="announce">Free delivery on orders over ₹2,500 · Easy exchanges</div>
   <header class="nav">
-    <a href="index.html" class="brand"><img id="brandLogo" src="assets/logo.svg" alt="Verane logo"><span
-        data-config="brandName">Verane</span></a>
-    <nav class="nav-links"><a href="index.html#shop">Shop</a><a href="index.html#collections">Collections</a><a
-        href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
-    <div class="nav-actions"><a class="nav-icon bag-link" href="index.html#shop">Bag</a><button class="nav-burger"
-        id="burgerBtn" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand" aria-label="Home">
+      <img id="brandLogo" src="assets/logo.svg" alt="Verane logo">
+      <span data-config="brandName">Verane</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+
+      <button class="nav-icon" id="searchBtn" aria-label="Search">⌕</button>
+      <a class="nav-icon bag-link" href="#shop" aria-label="Shopping bag">Bag</a>
+
+      <button class="nav-burger burger-btn" id="burgerBtn" aria-expanded="false" aria-label="Open menu"
+        aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
   <div class="mobile-panel" id="mobilePanel"><a href="index.html#shop">Shop</a><a
