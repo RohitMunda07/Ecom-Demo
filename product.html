@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product — Verane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="announce">Free delivery on orders over ₹2,500 · Easy exchanges</div>
+  <header class="nav">
+    <a href="index.html" class="brand"><img id="brandLogo" src="assets/logo.svg" alt="Verane logo"><span
+        data-config="brandName">Verane</span></a>
+    <nav class="nav-links"><a href="index.html#shop">Shop</a><a href="index.html#collections">Collections</a><a
+        href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+    <div class="nav-actions"><a class="nav-icon bag-link" href="index.html#shop">Bag</a><button class="nav-burger"
+        id="burgerBtn" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-panel" id="mobilePanel"><a href="index.html#shop">Shop</a><a
+      href="index.html#collections">Collections</a><a href="index.html#about">About</a><a
+      href="index.html#contact">Contact</a></div>
+
+  <a href="index.html#shop" class="back-link">← Back to collection</a>
+  <section class="product-detail">
+    <div class="product-image"><img id="productImage" src="assets/products/linen-saree.svg" alt="Product"></div>
+    <div class="product-info">
+      <p class="hero-kicker" id="productCategory">Sarees</p>
+      <h1 id="productName">Linen Saree</h1>
+      <p class="price product-price" id="productPrice">₹2,499</p>
+      <p class="product-desc" id="productDesc">A lightweight everyday saree.</p>
+      <div class="size-block">
+        <div class="size-label-row"><span>Select size</span><button class="size-guide-btn" type="button">Size
+            guide</button></div>
+        <div class="size-options"><button class="size-btn" data-size="XS">XS</button><button class="size-btn"
+            data-size="S">S</button><button class="size-btn" data-size="M">M</button><button class="size-btn"
+            data-size="L">L</button><button class="size-btn" data-size="XL">XL</button></div>
+        <p class="size-note" id="sizeNote"></p>
+      </div>
+      <button class="btn btn-primary add-to-bag" id="addToBagBtn">Add to bag</button>
+      <div class="product-meta">
+        <details open>
+          <summary>Product details</summary>
+          <p>Demo content. Replace fabric, care, fit and delivery information with the client's real product data.</p>
+        </details>
+        <details>
+          <summary>Shipping & returns</summary>
+          <p>Demo policy. Replace this with the client's actual shipping and return policy before launch.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div><span class="footer-brand" data-config="brandName">Verane</span>
+      <p data-config="tagline">Modern fashion for everyday life.</p>
+    </div>
+    <div>
+      <h4>Shop</h4><a href="index.html#shop">Sarees</a><a href="index.html#shop">Kurtis</a><a
+        href="index.html#shop">Dresses</a>
+    </div>
+    <div>
+      <h4>Support</h4><a href="index.html#contact">Contact</a><a href="#">Shipping & Returns</a><a href="#">Size
+        Guide</a>
+    </div>
+    <div>
+      <h4>Get in touch</h4><a href="mailto:hello@example.com">hello@example.com</a><a id="waLink" href="#">WhatsApp
+        us</a>
+    </div>
+    <div class="footer-bottom">© 2026 <span data-config="brandName">Verane</span>. All rights reserved. Demo website.
+    </div>
+  </footer>
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener">WA</a>
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+
+</html>

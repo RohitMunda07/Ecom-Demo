@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A reusable generic fashion ecommerce demo website.">
+  <title>Verane — Fashion Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="announce">Free delivery on orders over ₹2,500 · Easy exchanges</div>
+  <header class="nav">
+    <a href="index.html" class="brand" aria-label="Home">
+      <img id="brandLogo" src="assets/logo.svg" alt="Verane logo">
+      <span data-config="brandName">Verane</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+
+      <button class="nav-icon" id="searchBtn" aria-label="Search">⌕</button>
+      <a class="nav-icon bag-link" href="#shop" aria-label="Shopping bag">Bag</a>
+
+      <button class="nav-burger burger-btn" id="burgerBtn" aria-expanded="false" aria-label="Open menu"
+        aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobilePanel">
+    <div id="back-btn-container">
+      <span id="back-btn" class="text-3xl">
+        [← </span>
+    </div>
+    <a href="#shop">Shop</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="search-inner">
+      <input id="searchInput" type="search" placeholder="Search sarees, kurtis, dresses..."
+        aria-label="Search products">
+      <button id="closeSearch" type="button">Close</button>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="hero-kicker">THE EVERYDAY EDIT</p>
+      <h1>Style that <em>works</em> for every wardrobe.</h1>
+      <p class="hero-sub">A clean, flexible fashion storefront for sarees, kurtis, dresses, ethnic sets and everyday
+        accessories.</p>
+      <div class="hero-ctas">
+        <a href="#shop" class="btn btn-primary">Shop collection</a>
+        <a href="#collections" class="btn btn-ghost">Explore categories</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1727430228383-aa1fb59db8bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FyZWV8ZW58MHx8MHx8fDA%3D"
+        alt="Demo saree product">
+    </div>
+  </section>
+
+  <section class="collections" id="collections">
+    <div class="section-head">
+      <p class="eyebrow">SHOP BY CATEGORY</p>
+      <h2>Built to fit different fashion businesses.</h2>
+    </div>
+    <div class="category-grid">
+      <a class="category-card" href="#shop" data-filter="Sarees"><img
+          src="https://images.unsplash.com/photo-1705164454907-a04fe248f675?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D"
+          alt="Sarees"><span>Sarees</span></a>
+      <a class="category-card" href="#shop" data-filter="Kurtis"><img
+          src="https://images.unsplash.com/photo-1731577506438-c3dd2988e5bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
+          alt="Kurtis"><span>Kurtis</span></a>
+      <a class="category-card" href="#shop" data-filter="Dresses"><img
+          src="https://images.unsplash.com/photo-1754244575428-8123e0d27ef3?auto=format&fit=crop&w=1200&q=82"
+          alt="Dresses"><span>Dresses</span></a>
+      <a class="category-card" href="#shop" data-filter="Ethnic Sets"><img
+          src="https://images.unsplash.com/photo-1756483571456-6fa86cb1ae53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXRobmljJTIwd2VhcnxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Ethnic sets"><span>Ethnic Sets</span></a>
+      <a class="category-card" href="#shop" data-filter="Dupattas"><img
+          src="https://images.unsplash.com/photo-1773439877245-79b5ac3244a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGR1cGF0dGF8ZW58MHx8MHx8fDA%3D"
+          alt="Dupattas"><span>Dupattas</span></a>
+      <a class="category-card" href="#shop" data-filter="Accessories"><img
+          src="https://images.unsplash.com/photo-1592763786796-80c5183faec2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHNhcmVlJTIwYWNjZXNzb3JpZXN8ZW58MHx8MHx8fDA%3D"
+          alt="Accessories"><span>Accessories</span></a>
+    </div>
+  </section>
+
+  <section class="featured" id="shop">
+    <div class="section-head row-head">
+      <div>
+        <p class="eyebrow">THE COLLECTION</p>
+        <h2>Featured products</h2>
+      </div>
+      <p>Click any product image or card to open its full product page.</p>
+    </div>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter active" data-filter="All">All</button>
+      <button class="filter" data-filter="Sarees">Sarees</button>
+      <button class="filter" data-filter="Kurtis">Kurtis</button>
+      <button class="filter" data-filter="Dresses">Dresses</button>
+      <button class="filter" data-filter="Ethnic Sets">Ethnic Sets</button>
+      <button class="filter" data-filter="Dupattas">Dupattas</button>
+      <button class="filter" data-filter="Accessories">Accessories</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>No products found.</p>
+  </section>
+
+  <section class="promo" id="about">
+    <div>
+      <p class="promo-kicker">A REUSABLE CLIENT DEMO</p>
+      <h2>Change the name, logo, colour and contact details — keep the rest.</h2>
+      <p>This template is intentionally generic so it can be pitched to boutiques, saree stores, ethnic-wear shops,
+        fashion labels and multi-category clothing businesses.</p>
+    </div>
+    <a href="#contact" class="btn btn-outline-light">Discuss your store</a>
+  </section>
+
+  <section class="reviews">
+    <div class="section-head">
+      <p class="eyebrow">SOCIAL PROOF</p>
+      <h2>What customers say</h2>
+    </div>
+    <div class="review-grid">
+      <blockquote>
+        <p>“Beautiful collection and very comfortable fabric.”</p><cite>— Priya, Ranchi</cite>
+      </blockquote>
+      <blockquote>
+        <p>“The quality was exactly what I expected. Delivery was smooth.”</p><cite>— Ananya, Bengaluru</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Loved the fit and the variety of styles available.”</p><cite>— Meher, Pune</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="newsletter" id="contact">
+    <div class="newsletter-inner">
+      <p class="eyebrow">STAY CONNECTED</p>
+      <h2>Be the first to hear about new arrivals.</h2>
+      <p>Demo newsletter form — connect it to the client's email platform when the site goes live.</p>
+      <form id="newsletterForm">
+        <input type="email" placeholder="you@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div><span class="footer-brand" data-config="brandName">Verane</span>
+      <p data-config="tagline">Modern fashion for everyday life.</p>
+    </div>
+    <div>
+      <h4>Shop</h4><a href="#shop">Sarees</a><a href="#shop">Kurtis</a><a href="#shop">Dresses</a>
+    </div>
+    <div>
+      <h4>Support</h4><a href="#contact">Contact</a><a href="#">Shipping & Returns</a><a href="#">Size Guide</a>
+    </div>
+    <div>
+      <h4>Get in touch</h4><a href="mailto:hello@example.com">hello@example.com</a><a id="waLink" href="#">WhatsApp
+        us</a>
+    </div>
+    <div class="footer-bottom">© 2026 <span data-config="brandName">Verane</span>. All rights reserved. Demo website.
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <img src="./assets/whatsapp.png" alt="whatsapp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
